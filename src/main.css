@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    align-items: center;
+    height: 50vmax;
+    width: 100vmax;
+}
+
+.container {
+    display: flex;
+    width: 365px;
+    height: 105px;
+}
+
+.white-keys {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    border: black 2px solid;
+}
+
+.white-keys kbd{
+    background-color: white;
+    border: black 1px solid;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.white-keys kbd:hover {
+    opacity: .5;
+}
+
+.black-keys {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+
+.black-keys kbd {
+    background-color: black;
+    border: black 1px solid;
+    display: inline-block;
+    color: white;
+    height: 75px;
+    width: 30px;
+    position: relative;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.black-keys kbd:nth-child(2), .black-keys kbd:nth-child(4),
+.black-keys kbd:nth-child(5) {
+    margin-left: 20px;
+}
+
+.black-keys kbd:nth-child(3) {
+    margin-left: 74px;
+}
+
+.black-keys kbd:hover {
+    opacity: .5;
+}
